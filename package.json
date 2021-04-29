@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "local": "vercel dev"
+  },
+  "devDependencies": {
+    "vercel": "^22.0.1"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
