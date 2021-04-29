@@ -29,13 +29,9 @@ module.exports = async (req, res) => {
   if (req.method === "POST") {
     const { type, data } = req.body as NewCommentBody;
 
-    console.log(data.approve_link)
-
     switch (type) {
       case "new_comment": {
-        const msg = `New comment on website <strong>${
-          data.project_title
-        }</strong>:
+        const msg = `New comment on website <strong>${data.project_title}</strong> in page <strong>${data.page_title}</strong>:
 <pre>
 ${data.content.replace(/<[^>]*>?/gm, "")}
 </pre>
@@ -46,7 +42,7 @@ by: <strong>${data.by_nickname}</strong>`;
               [
                 {
                   text: "Approve without login",
-                  url: data.approve_link,
+                  url: 'http://baidu.com',
                 },
               ],
             ],
