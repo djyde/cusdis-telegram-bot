@@ -42,7 +42,7 @@ by: <strong>${data.by_nickname}</strong>`;
               [
                 {
                   text: "Approve without login",
-                  url: 'http://baidu.com',
+                  url: data.approve_link,
                 },
               ],
             ],
