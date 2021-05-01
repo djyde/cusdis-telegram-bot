@@ -1,8 +1,8 @@
 # cusdis-telegram-bot
 
-Official Telegram bot for [Cusdis](https://cusdis.com)
+Official Telegram bot for [Cusdis](https://cusdis.com). (Works on both Cusdis Cloud and self-host Cusdis).
 
-![screenshot](screenshot.png)
+<img src="screenshot.png" width="375" />
 
 ## Usage
 
