@@ -1,11 +1,13 @@
 {
   "scripts": {
-    "local": "vercel dev"
+    "local": "vercel dev",
+    "polling": "node index.js"
   },
   "devDependencies": {
     "vercel": "^22.0.1"
   },
   "dependencies": {
-    "axios": "^0.21.1"
+    "axios": "^0.21.1",
+    "node-telegram-bot-api": "^0.53.0"
   }
 }
