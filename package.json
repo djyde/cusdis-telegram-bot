@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "start": "node index.js",
     "local": "vercel dev",
     "polling": "node index.js"
   },
