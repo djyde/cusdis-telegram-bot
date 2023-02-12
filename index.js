@@ -12,12 +12,17 @@ const bot = new Bot(token, {
   polling: true,
 });
 
+const env = {
+  token: process.env.TOKEN,
+  host: process.env.HOST || 'https://tg-bot.cusdis.com'
+}
+
 bot.onText(/\/gethook/, (msg) => {
   console.log(msg)
   bot.sendMessage(
     msg.chat.id,
     `Click to copy your Telegram Webhook URL:
-\`https://tg-bot.cusdis.com/api/hook/${msg.chat.id}\``,
+\`${env.host}/api/hook/${msg.chat.id}\``,
     {
       parse_mode: "MarkdownV2",
     }
