@@ -24,6 +24,10 @@ bot.onText(/\/gethook/, (msg) => {
   );
 });
 
+app.get('/', (req, res) => {
+  res.send('works')
+})
+
 app.post('/api/hook/:chatId', async (req) => {
   const { chatId } = req.params
     const { type, data } = req.body
