@@ -13,6 +13,12 @@ Official Telegram bot for [Cusdis](https://cusdis.com). (Works on both Cusdis Cl
 
 ## Self deployed guide
 
+### Deploy on Railway
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/6uxZJI?referralCode=randyloop)
+
+### Manually deploy
+
 1. Set the environment variables:
 
 - `TOKEN` Telegram bot token
