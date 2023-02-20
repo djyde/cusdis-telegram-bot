@@ -22,7 +22,6 @@ if (process.env.RAILWAY_STATIC_URL) {
 }
 
 bot.onText(/\/gethook/, (msg) => {
-  console.log(msg);
   bot.sendMessage(
     msg.chat.id,
     `Click to copy your Telegram Webhook URL:
@@ -50,7 +49,7 @@ app.post("/api/hook/:chatId", async (req) => {
 ${data.content.replace(/<[^>]*>?/gm, "")}
 </pre>
 by: <strong>${data.by_nickname}</strong>`;
-      await sendMessage(chatId, msg, {
+      await bot.sendMessage(chatId, msg, {
         reply_markup: {
           inline_keyboard: [
             [
