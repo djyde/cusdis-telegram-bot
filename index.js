@@ -50,6 +50,7 @@ ${data.content.replace(/<[^>]*>?/gm, "")}
 </pre>
 by: <strong>${data.by_nickname}</strong>`;
       await bot.sendMessage(chatId, msg, {
+        parse_mode: "MarkdownV2",
         reply_markup: {
           inline_keyboard: [
             [
