@@ -36,7 +36,7 @@ app.get("/", (req, res) => {
   res.send("works");
 });
 
-app.post("/api/hook/:chatId", async (req) => {
+app.post("/api/hook/:chatId", async (req, res) => {
   const { chatId } = req.params;
   const { type, data } = req.body;
 
